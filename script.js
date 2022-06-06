@@ -43,5 +43,12 @@ function addMeal(mealData, random = false) {
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>`;
+
+  const btn = meal.querySelector(".meal-body .fav-btn");
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+  });
+
   meals.appendChild(meal);
 }
