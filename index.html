@@ -19,11 +19,13 @@
     <div class="mobile-container">
       <header>
         <input type="text" />
-        <button id="search">Search</button>
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </header>
       <div class="fav-container">
         <h3>Favorite Meals</h3>
-        <ul>
+        <ul class="fav-meals">
           <li>
             <img
               src="https://www.themealdb.com/images/ingredients/Lime.png"
@@ -42,20 +44,28 @@
               alt=""
             /><span>Tart</span>
           </li>
+          <li>
+            <img
+              src="https://www.themealdb.com//images//media//meals//xvsurr1511719182.jpg"
+              alt=""
+            /><span>Veggiesoup</span>
+          </li>
         </ul>
       </div>
       <div class="meals">
-        <span class="random">Random Recipe</span>
         <div class="meal">
           <div class="meal-header">
+            <span class="random">Random Recipe</span>
             <img
               src="https://www.themealdb.com//images//media//meals//xvsurr1511719182.jpg"
               alt=""
             />
           </div>
           <div class="meal-body">
-            <h4>Veggie Veggie</h4>
-            <button><i class="fa-regular fa-heart"></i></button>
+            <h4>Veggiesoup</h4>
+            <button class="fav-btn">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
         </div>
       </div>
