@@ -38,7 +38,7 @@ function addMeal(mealData, random = false) {
             />
           </div>
           <div class="meal-body">
-            <h4>${mealData.Meal}</h4>
+            <h4>${mealData.strMeal}</h4>
             <button class="fav-btn">
               <i class="fa-regular fa-heart"></i>
             </button>
