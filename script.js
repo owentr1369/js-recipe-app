@@ -52,3 +52,15 @@ function addMeal(mealData, random = false) {
 
   meals.appendChild(meal);
 }
+// Add meal to LocalStorage
+function addMealToLS(mealId) {
+  const mealIds = getMealsFromLS();
+  localStorage.setItem("mealIds", JSON.stringify([...mealIds, mealId]));
+}
+
+// Get meal from LocalStorage
+function getMealsFromLS() {
+  const mealIds = JSON.parse(localStorage.getItem("mealIds"));
+
+  return mealIds;
+}
